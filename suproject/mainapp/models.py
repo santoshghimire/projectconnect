@@ -29,12 +29,14 @@ class OpportunityPost(models.Model):
     title = models.CharField(max_length=200)
     description = models.TextField()
     no_of_hours = models.CharField(max_length=100)
-    duration = models.CharField(max_length=100)
+    starting_date = models.DateField()
+    time_frame = models.CharField(max_length=100)
     requirements = models.TextField()
     purpose = models.CharField(max_length=2000)
     type_of_work = models.CharField(max_length=200)
     NGO = models.ForeignKey(NonProfitOrganization)
     picture = models.ImageField(upload_to='opportunity/', null=True)
+    location = models.CharField(max_length=200)
     CATEGORY_CHOICES = (
         ('Volunteer', 'Volunteer'),
         ('Internship', 'Internship')
@@ -68,7 +70,7 @@ class Volunteer(models.Model):
     address = models.CharField(max_length=400)
     contact_number = models.CharField(max_length=15)
     date_of_birth = models.DateField()
-    reference_person = models.ForeignKey('self')
+    reference_person = models.ForeignKey('self', null=True)
 
     def __unicode__(self):
         return self.title

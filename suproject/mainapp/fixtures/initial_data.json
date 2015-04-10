@@ -60,13 +60,73 @@
       "title": "Tutor trafficking survivors in English studies",
       "description": "A volunteer is needed to tutor trafficking survivors with their English studies for 2 hours/week. This opportunity is a 2 month commitment.",
       "no_of_hours": "16-20 hours",
-      "duration": "May 1, 2015  to June 30, 2015",
+      "time_frame": "One month",
+      "starting_date": "2015-05-01",
       "requirements": "Fluent English speaker and Female",
       "purpose": "Build mentoring relationship to coach girls. Support education efforts to rehabilitate and empower at-risk youth. Build English skills.",
       "type_of_work": "English Tutoring",
       "NGO": 2,
       "picture": "",
-      "category": "Volunteer"
+      "category": "Volunteer",
+      "location": "Raksha Nepal, Kathmandu, Nepal"
     }
-  }
+  },
+  {
+    "model": "mainapp.opportunitypost",
+    "pk": 2,
+    "fields": {
+      "title": "Build event page for award-winning nonprofit’s 20th anniversary event",
+      "description": "Design and create Shakti Samuha’s event page to help them raise awareness and funds for their 20th year birthday party! This opportunity is for 2 weeks.",
+      "no_of_hours": "20-25 hours",
+      "time_frame": "One month",
+      "starting_date": "2015-12-01",
+      "requirements": "Proficient at front-end design. Web development skills.",
+      "purpose": "Build your portfolio with impactful design projects. Support an award-winning nonprofit with their biggest event. Help an awesome nonprofit to raise money!",
+      "type_of_work": "English Tutoring",
+      "NGO": 1,
+      "picture": "",
+      "category": "Volunteer",
+      "location": "Shakti Samuha, Kathmandu, Nepal"
+    }
+  },
+  {
+    "model": "mainapp.opportunitypost",
+    "pk": 3,
+    "fields": {
+      "title": "Volunteer to teach computer skills",
+      "description": "A volunteer is required to teach some basic computer skills to the trafficked victims kids.",
+      "no_of_hours": "30-35 hours",
+      "time_frame": "Two month",
+      "starting_date": "2015-12-21",
+      "requirements": "Proficient at basic computer skills, email and internet.",
+      "purpose": "Teach the kids on how to use some basic computer tools like word, spreadsheet, presentation, email and social media.",
+      "type_of_work": "Teaching computer skills",
+      "NGO": 3,
+      "picture": "",
+      "category": "Volunteer",
+      "location": "CWIN HQ, Ravi Bhawan, Kathmandu"
+    }
+  },  
+  {
+    "model": "mainapp.volunteer",
+    "pk": 1,
+    "fields": {
+      "first_name": "Yogesh",
+      "last_name": "Bhandari",
+      "gender": "Male",
+      "address": "Kupondole, Lalitpur",
+      "contact_number": "9840063224",
+      "date_of_birth": "1992-03-14"
+    }
+  },
+  {
+    "model": "mainapp.applicationforopportunity",
+    "pk": 1,
+    "fields": {
+      "volunteer": 1,
+      "opportunity_post": 2,
+      "interest_reason": "I am really interested in technical help that I can provide to the organizations.",
+      "resume": ""
+    }
+  }  
 ]
