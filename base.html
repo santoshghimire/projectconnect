@@ -67,7 +67,7 @@
 		<div class="container">
 			<h2>Recent Project Opportunities</h2>
 			<div id="projects">
-				<aside class="project">
+				<!-- <aside class="project">
 					<h3 class="project-title">Insert title here title hererere</h3>	
 					<h5 class="project-location">Insert Location here</h5>
 					<div class="project-img">
@@ -79,98 +79,38 @@
 					</div>
 					<span class="project-ngo">Insert NGO name here</span>
 					<span class="project-category">Category</span>
-
-					<a href="#" class="view-more">Volunteer</a>
-				</aside>
-
-				<aside class="project">
-					<h3 class="project-title">Insert title here title hererere</h3>	
-					<h5 class="project-location">Insert Location here</h5>
-					<div class="project-img">
-						<img src="images/project_img.jpg"/>
-						<div class="overlay-description">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam scelerisque sem sed felis imperdiet, vulputate cursus purus facilisis.</p>
-							<span>Insert Project type here</span>
-						</div>
-					</div>
-					<span class="project-ngo">Insert NGO name here</span>
-					<span class="project-category">Category</span>
-
-					<a href="#" class="view-more">Volunteer</a>
-				</aside>
-
-				<aside class="project">
-					<h3 class="project-title">Insert title here title hererere</h3>	
-					<h5 class="project-location">Insert Location here</h5>
-					<div class="project-img">
-						<img src="images/project_img.jpg"/>
-						<div class="overlay-description">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam scelerisque sem sed felis imperdiet, vulputate cursus purus facilisis.</p>
-							<span>Insert Project type here</span>
-						</div>
-					</div>
-					<span class="project-ngo">Insert NGO name here</span>
-					<span class="project-category">Category</span>
-
-					<a href="#" class="view-more">Volunteer</a>
-				</aside>
-
-				<aside class="project">
-					<h3 class="project-title">Insert title here title hererere</h3>	
-					<h5 class="project-location">Insert Location here</h5>
-					<div class="project-img">
-						<img src="images/project_img.jpg"/>
-						<div class="overlay-description">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam scelerisque sem sed felis imperdiet, vulputate cursus purus facilisis.</p>
-							<span>Insert Project type here</span>
-						</div>
-					</div>
-					<span class="project-ngo">Insert NGO name here</span>
-					<span class="project-category">Category</span>
-
-					<a href="#" class="view-more">Volunteer</a>
-				</aside>
-
-				<aside class="project">
-					<h3 class="project-title">Insert title here title hererere</h3>	
-					<h5 class="project-location">Insert Location here</h5>
-					<div class="project-img">
-						<img src="images/project_img.jpg"/>
-						<div class="overlay-description">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam scelerisque sem sed felis imperdiet, vulputate cursus purus facilisis.</p>
-							<span>Insert Project type here</span>
-						</div>
-					</div>
-					<span class="project-ngo">Insert NGO name here</span>
-					<span class="project-category">Category</span>
-
-					<a href="#" class="view-more">Volunteer</a>
-				</aside>
-
-				<aside class="project">
-					<h3 class="project-title">Insert title here title hererere</h3>	
-					<h5 class="project-location">Insert Location here</h5>
-					<div class="project-img">
-						<img src="images/project_img.jpg"/>
-						<div class="overlay-description">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam scelerisque sem sed felis imperdiet, vulputate cursus purus facilisis.</p>
-							<span>Insert Project type here</span>
-						</div>
-					</div>
-					<span class="project-ngo">Insert NGO name here</span>
-					<span class="project-category">Category</span>
-
-					<a href="#" class="view-more">Volunteer</a>
-				</aside>
-
-			<a href="#" class="view-more-main">View All Projects</a>	
+				
+					<a href="#" class="view-more">Volunteer</a> 
+				</aside>-->		
 
 			</div>
+			<script id="projects-template" type="text/x-handlebars-template">
+				{{#each projects}}
+				<aside class="project">
+					<h3 class="project-title">{{{this.title}}}</h3>	
+					<h5 class="project-location">{{this.location}}</h5>
+					<div class="project-img">
+						<img src="{{this.picture}}"/>
+						<div class="overlay-description">
+							<p>{{this.description}}</p>
+							<span>{{this.projectType}}</span>
+						</div>
+					</div>
+					<span class="project-ngo">{{{this.ngoName}}}</span>
+					<span class="project-category">{{{this.category}}}</span>
+
+					<a href="#" class="view-more">Volunteer</a>
+				</aside>
+				{{/each}}
+			</script>
+
+			<a href="#" class="view-more-main">View All Projects</a>
 		</div>
 	</section>
 
 </div>
 
+<script src="js/handlebars-v3.0.1.js"></script>
 <script src="js/jquery.min.js"></script>
 <script src="js/base.js"></script>
 </body>
