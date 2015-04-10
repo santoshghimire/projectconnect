@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600);
 *{
 	margin: 0px;
 	padding: 0px;
@@ -92,4 +93,57 @@ section#home-info p#home-info-tag{
 	font-size: 20px;
 	line-height: 1.5;
 	margin-top: 15px;
+}
+
+#filter-projects{
+	background: #e2e2e2;
+}
+#filter-projects .container{ padding: 30px 0px; }
+#filter-projects h2{
+	font-family: "Open Sans", sans-serif;
+	font-size: 20px;
+	font-weight: 700; 
+	color: #000;
+	text-align: left;
+	text-transform: uppercase;
+	line-height: 2;
+}
+#filter-projects form{
+	width: 100%;
+	padding: 20px 0px 10px;
+	overflow: hidden;
+	position: relative;
+}
+#filter-projects form select{
+	height: 50px;
+	font-family: "Museo300-Regular";
+	color: #333;
+	background: #fff;
+	width: 36%;
+	float: left;
+	border-radius: 2px;
+	margin-right: 20px;
+	padding: 10px;
+	box-sizing: border-box;
+	font-size: 14px;
+}
+#filter-projects form input[type="submit"]{
+	background: #712b90;
+	width: 20%;
+	float: left;
+	padding: 14px;
+	font-size: 18px;
+	font-family: "Museo300-Regular";
+	color: #fff;
+	border: none;
+}
+#filter-projects span#adv-filter a{
+	font-family: "Open Sans", sans-serif;
+	font-size: 12px;
+	float: right;
+	clear: both;
+	text-transform: uppercase;
+	color: #712B90;
+	text-decoration: none;
+	margin-right: 25px;
 }
