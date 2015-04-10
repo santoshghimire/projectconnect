@@ -123,8 +123,8 @@ section#home-info p#home-info-tag{
 #filter-projects{
 	background: #e2e2e2;
 }
-#filter-projects .container, #list-projects .container{ padding: 30px 0px; }
-#filter-projects h2, #list-projects h2{
+#filter-projects .container, #list-projects .container, #our-partners .container{ padding: 30px 0px; }
+#filter-projects h2, #list-projects h2, #our-partners h2{
 	font-family: "Open Sans", sans-serif;
 	font-size: 20px;
 	font-weight: 700; 
@@ -177,16 +177,20 @@ section#home-info p#home-info-tag{
 }
 #list-projects #projects{
 	width: 100%;
+	/*background: #000;*/
 	overflow: hidden;
 	box-sizing: border-box;
 	padding: 30px 0px;
 }
 #list-projects #projects aside.project{
 	width: 31%;
-	float: left;
+	display: inline-block;
+	/*float: left;*/
 	margin-right: 2%;
 	margin-bottom: 20px;
 	border: 1px solid #aaa;
+	box-shadow: 0 0 5px #c9c9c9;
+	border-radius: 5px;
 	padding: 10px 0px; 
 }
 #list-projects #projects aside.project:nth-child(3n+3){
@@ -251,18 +255,26 @@ section#home-info p#home-info-tag{
 	font-size: 14px;
 }
 
-#list-projects #projects aside.project a.view-more-main{
-	width: 300px;
-	display: inline-block;
-	margin-left: 10%;
-	margin-top: 15px;
-	background: #712b90;
-	padding: 8px;
-	box-sizing: border-box;
-	border-radius: 3px;
-	color: #fff;
+#list-projects #projects a.view-more-main{
+	float: right;
 	text-decoration: none;
-	text-align: center;
-	font-family: "Open Sans", sans-serif;
+	text-transform: uppercase;
+	font-family: "Open Sans";
 	font-size: 14px;
+	font-weight: bold;
+	margin-right: 19px;
+	margin-top: 10px;
+	color: #333;
 }
+
+#our-partners{
+	background: #e2e2e2;
+}
+#our-partners ul{ padding: 30px 0px; }
+#our-partners ul li{ display: inline-block; float: left; }
+#our-partners ul li img{ float: left; height: 65px; width: auto; margin-right: 50px;} 
+
+
+/* Projects Page */
+
+body.project-page #filter-projects{ margin-top: 30px; }

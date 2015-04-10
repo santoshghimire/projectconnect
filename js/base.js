@@ -27,6 +27,44 @@
         }
     ]
 
+    var projectAll = [
+        {
+            title : "The title",
+            location : "location",
+            picture : "images/project_img.jpg",
+            description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit minus facilis itaque, similique dolorum? Ipsa quaerat neque aliquid corporis modi alias, totam pariatur aut ab autem ut rem ducimus voluptatibus!",
+            projectType : "Hawa",
+            ngoName : "ewwwwweeew sdfd",
+            category : "smth like",
+        },
+        {
+            title : "The title",
+            location : "location",
+            picture : "images/project_img.jpg",
+            description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit minus facilis itaque, similique dolorum? Ipsa quaerat neque aliquid corporis modi alias, totam pariatur aut ab autem ut rem ducimus voluptatibus!",
+            projectType : "Hawa",
+            ngoName : "ewwwwweeew sdfd",
+            category : "smth like",
+        },
+        {
+            title : "The title",
+            location : "location",
+            picture : "images/project_img.jpg",
+            description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit minus facilis itaque, similique dolorum? Ipsa quaerat neque aliquid corporis modi alias, totam pariatur aut ab autem ut rem ducimus voluptatibus!",
+            projectType : "Hawa",
+            ngoName : "ewwwwweeew sdfd",
+            category : "smth like",
+        },{
+            title : "The title",
+            location : "location",
+            picture : "images/project_img.jpg",
+            description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit minus facilis itaque, similique dolorum? Ipsa quaerat neque aliquid corporis modi alias, totam pariatur aut ab autem ut rem ducimus voluptatibus!",
+            projectType : "Hawa",
+            ngoName : "ewwwwweeew sdfd",
+            category : "smth like",
+        }
+    ]
+
     function goToByScroll(id){
           // Remove "link" from the ID
         id = id.replace("link", "");
@@ -40,6 +78,18 @@
        goToByScroll('filter-projects');
     });
 
+    function populateProjects () {
+        var source   = $("#projects-template").html();
+        var template = Handlebars.compile(source);
+        console.log(projectAll);
+        var context = {
+            projects : projectAll
+        };
+        var html    = template(context);
+        console.log(html);
+        $('#projects').html(html);
+    }
+    populateProjects();
     $('#filter-projects').on('change',"#filter-1",function () {
         // alert("hello");
     })
