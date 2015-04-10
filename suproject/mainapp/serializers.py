@@ -13,15 +13,20 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
 class NonProfitOrganizationSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = NonProfitOrganization
-        fields = ('name', 'description', 'category', 'location')
+        fields = (
+            'name', 'mission', 'description', 'category', 'location',
+            'contact_number', 'year_established', 'email', 'website',
+            'logo', 'picture_1', 'picture_2'
+        )
 
 
 class OpportunityPostSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = OpportunityPost
         fields = (
-            'title', 'description', 'no_of_hours',
-            'requirements', 'purpose', 'type_of_work', 'NGO'
+            'title', 'description', 'no_of_hours', 'duration',
+            'requirements', 'purpose', 'type_of_work', 'NGO',
+            'picture', 'created_at'
         )
 
 
@@ -30,7 +35,7 @@ class VolunteerSerializer(serializers.HyperlinkedModelSerializer):
         model = Volunteer
         fields = (
             'first_name', 'last_name', 'gender', 'address',
-            'contact_number', 'date_of_birth', 'resume',
+            'contact_number', 'date_of_birth',
             'reference_person'
         )
 
@@ -38,4 +43,4 @@ class VolunteerSerializer(serializers.HyperlinkedModelSerializer):
 class ApplicationForOpportunitySerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = ApplicationForOpportunity
-        fields = ('volunteer', 'opportunity_post', 'interest_reason')
+        fields = ('volunteer', 'opportunity_post', 'interest_reason', 'resume', 'created_at')
