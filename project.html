@@ -5,7 +5,7 @@
 	<title>Awesome website. Yeah!!</title>
 </head>
 <link rel="stylesheet" type="text/css" href="css/style.css" />
-<body>
+<body class="project-page">
 
 
 <div id="side-wrapper">	
@@ -29,12 +29,6 @@
 				</ul>
 			</nav>
 		</header>	
-
-		<section id="home-info">
-			<p id="home-info-main">A platform to connect <br/>volunteers to<br/>nonprofit projects.</p>
-			<p id="home-info-tag">Give 20% of your time for a better world.</p>
-
-		</section>
 	</div>
 
 	<section id="filter-projects">
@@ -42,15 +36,15 @@
 			<h2>Find Projects to Volunteer</h2>
 			<form action="#">
 				<select id="filter-1">
-					<option disabled>View Project by types</option>
+					<option disabled="disabled" selected="selected">View Project by types</option>
 					<option value="this">This</option>
 					<option value="this">That</option>
 					<option value="this">This</option>
 					<option value="this">Bleh</option>
 				</select>
 
-				<select id="filter-2" placeholder="View Project by types">
-					<!-- <option disabled>View Project by types</option> -->
+				<select id="filter-2">
+					<option disabled="disabled" selected="selected">View Project by types</option>
 					<option value="this">This</option>
 					<option value="this">That</option>
 					<option value="this">This</option>
@@ -59,7 +53,6 @@
 
 				<input type="submit"/>
 			</form>
-			<span id="adv-filter"><a href="#">Advanced Filter</a></span>
 		</div>
 	</section>
 
