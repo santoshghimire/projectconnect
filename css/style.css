@@ -177,16 +177,20 @@ section#home-info p#home-info-tag{
 }
 #list-projects #projects{
 	width: 100%;
+	/*background: #000;*/
 	overflow: hidden;
 	box-sizing: border-box;
 	padding: 30px 0px;
 }
 #list-projects #projects aside.project{
 	width: 31%;
-	float: left;
+	display: inline-block;
+	/*float: left;*/
 	margin-right: 2%;
 	margin-bottom: 20px;
 	border: 1px solid #aaa;
+	box-shadow: 0 0 5px #c9c9c9;
+	border-radius: 5px;
 	padding: 10px 0px; 
 }
 #list-projects #projects aside.project:nth-child(3n+3){
