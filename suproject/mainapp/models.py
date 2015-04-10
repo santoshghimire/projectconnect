@@ -11,9 +11,12 @@ class NonProfitOrganization(models.Model):
     category = models.CharField(max_length=150)
     location = models.CharField(max_length=150)
     contact_number = models.CharField(max_length=15)
-    year_established = models.DateField()
+    year_established = models.IntegerField()
     email = models.EmailField()
     website = models.URLField()
+    logo = models.ImageField(upload_to='organizations/logo', null=True)
+    picture_1 = models.ImageField(upload_to='organizations/pictures', null=True)
+    picture_2 = models.ImageField(upload_to='organizations/pictures', null=True)
 
     def __unicode__(self):
         return self.name
@@ -25,13 +28,23 @@ class OpportunityPost(models.Model):
     """
     title = models.CharField(max_length=200)
     description = models.TextField()
-    no_of_hours = models.IntegerField()
+    no_of_hours = models.CharField(max_length=100)
     duration = models.CharField(max_length=100)
     requirements = models.TextField()
     purpose = models.CharField(max_length=2000)
     type_of_work = models.CharField(max_length=200)
     NGO = models.ForeignKey(NonProfitOrganization)
-    created_at = models.DateTimeField(auto_now_add=True)
+    picture = models.ImageField(upload_to='opportunity/', null=True)
+    CATEGORY_CHOICES = (
+        ('Volunteer', 'Volunteer'),
+        ('Internship', 'Internship')
+    )
+    category = models.CharField(
+        max_length=10,
+        choices=CATEGORY_CHOICES,
+        default='Volunteer'
+    )
+    created_at = models.DateTimeField(auto_now_add=True, null=True)
 
     def __unicode__(self):
         return self.title
@@ -55,7 +68,6 @@ class Volunteer(models.Model):
     address = models.CharField(max_length=400)
     contact_number = models.CharField(max_length=15)
     date_of_birth = models.DateField()
-    resume = models.FileField(upload_to='resume')
     reference_person = models.ForeignKey('self')
 
     def __unicode__(self):
@@ -70,7 +82,8 @@ class ApplicationForOpportunity(models.Model):
     volunteer = models.ForeignKey(Volunteer)
     opportunity_post = models.ForeignKey(OpportunityPost)
     interest_reason = models.TextField()
-    created_at = models.DateTimeField(auto_now_add=True)
+    resume = models.FileField(upload_to='resume/')
+    created_at = models.DateTimeField(auto_now_add=True, null=True)
 
     def __unicode__(self):
         return self.interest_reason
