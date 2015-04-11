@@ -1,4 +1,14 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600);
+
+@font-face{
+	font-family: "Museo300-Regular";
+	src: url(../fonts/Museo300-Regular.otf) format("opentype");
+}
+@font-face{
+	font-family: "Museo100-Regular";
+	src: url(../fonts/Museo100-Regular.otf) format("opentype");
+}
+
 *{
 	margin: 0px;
 	padding: 0px;
@@ -14,9 +24,20 @@ body{
 	right: 0px;
 	top: 0px;
 	height: 100vh;
-	background: url(../images/side-home.jpg);
+	background: url(../images/side-home-1.jpg);
 	background-size: auto 100%;
 }
+body.org #side-wrapper{
+	width: 30%;
+	position: fixed;
+	right: 0px;
+	top: 0px;
+	height: 100vh;
+	background: url(../images/side-home-2.jpg);
+	background-size: auto 100%;
+}
+
+
 #side-wrapper p{
 	font-family: "Open Sans", sans-serif;
 	font-size: 22px;
@@ -274,11 +295,34 @@ section#home-info p#home-info-tag{
 #our-partners ul li{ display: inline-block; float: left; }
 #our-partners ul li img{ float: left; height: 65px; width: auto; margin-right: 50px;} 
 
+#our-sponsors h2, #our-partners h2{
+	font-family: "Open Sans", sans-serif;
+	font-size: 20px;
+	font-weight: 700; 
+	color: #000;
+	text-align: left;
+	text-transform: uppercase;
+	line-height: 2;
+	/*text-align: center;*/
+}
+#our-sponsors .container{ padding: 30px 0px; }
+#our-sponsors ul li{ list-style-type: none; }
+#our-sponsors ul li img { float: left; height: 100px; width: auto; margin-right: 20px; }
+
 
 /* Projects Page */
 
 body.project-page #filter-projects{ margin-top: 30px; }
 body.project-page #filter-projects form select{ width: 45%; margin-bottom: 10px;}
+body.project-page #filter-projects form input[type="text"]{
+	width: 42%;
+	margin-bottom: 10px;
+	height: 26px;
+	padding: 10px;
+	font-family: "Museo300-Regular";
+	color: #000;
+	font-size: 15px;
+}
 
 /* Organization Page */
 
@@ -451,5 +495,41 @@ body.orgprofile .paragraph span{ font-family: "Museo300-Regular", sans-serif; ma
 	border-radius: 2px;
 	padding: 10px; 
 }
+#proj-info{ padding: 30px 0px;}
 
+#proj-info span{
+	font-family: "Museo300-Regular";
+	font-size: 18px;
+	color: #000;
+	line-height: 1.4; 
+	text-align: left;
+	clear: both;
+}
+#proj-info span.proj-org-name{
+	color: #712b90;
+	text-transform: uppercase;
+}
 
+body.projsingle .paragraph h3{ 
+	margin-top: 30px; 
+	font-family: "Open Sans", sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	line-height: 1.8;
+	color: #000; 
+	margin: 30px 0px 10px; 
+}
+body.projsingle a.view-more{
+	background: #712b90;
+	width: 20%;
+	float: left;
+	padding: 14px;
+	font-size: 18px;
+	font-family: "Museo300-Regular";
+	color: #fff;
+	border: none;
+	border-radius: 2px;
+	text-decoration: none; 
+	margin-top: 30px;
+	text-align: center;
+}

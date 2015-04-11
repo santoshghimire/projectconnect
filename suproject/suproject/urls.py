@@ -7,15 +7,22 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from mainapp.views import UserViewSet, OpportunityPostViewSet, \
     NonProfitOrganizationViewSet, VolunteerViewSet, \
-    ApplicationForOpportunityViewSet
+    ApplicationForOpportunityViewSet, OpportunityPostTypeViewSet,\
+    SponserViewSet, OpportunityPostLocationViewSet, \
+    OpportunityPostTimeFrameViewSet
 admin.autodiscover()
 
 router = routers.DefaultRouter()
 router.register(r'users', UserViewSet)
+# router.register(r'opportunities', OpportunityPostViewSet.as_view())
 router.register(r'opportunities', OpportunityPostViewSet)
+router.register(r'project-types', OpportunityPostTypeViewSet)
 router.register(r'organizations', NonProfitOrganizationViewSet)
+router.register(r'timeframes', OpportunityPostTimeFrameViewSet)
 router.register(r'volunteers', VolunteerViewSet)
 router.register(r'application', ApplicationForOpportunityViewSet)
+router.register(r'sponsers', SponserViewSet)
+router.register(r'locations', OpportunityPostLocationViewSet)
 
 urlpatterns = patterns(
     '',

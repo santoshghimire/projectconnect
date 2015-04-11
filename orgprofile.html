@@ -29,61 +29,69 @@
 				</ul>
 			</nav>
 		</header>	
-
-		<section id="home-info">
-			<p id="home-info-main">Raksha Nepal</p>
-			<p id="home-info-tag">Care and Support for sexually exploited girls, women and their children</p>
-		</section>
 	</div>
 
-	<section id="org-info">
-		<div class="container">
-			<div class="org-img">
-				<img src="images/rakhsha.png">
+	<div class="orgInfo">
+		<!-- org all info will be here -->
+	</div>
+	
+	<script id="orgInfo-template" type="text/x-handlebars-template">
+		<section id="home-info">
+			<div class="container">
+				<p id="home-info-main">{{title}}</p>
+				<p id="home-info-tag">{{tag}}</p>
+			</div>
+		</section>
+	
+
+		<section id="org-info">
+			<div class="container">
+				<div class="org-img">
+					<img src="{{orgImg}}">
+				</div>
+
+				<div class="org-mission">
+					<h3>Mission</h3>
+					<p>{{mission}}</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="paragraph">
+			<div class="container">
+			<div class="3points">
+				<h3>3 points to know</h3>
+				<ul>
+					{{#each points3}}
+						<li><p>{{@index}}. {{this}} </p></li>
+					{{/each}}
+				</ul>
+			</div>	
+
+			<div class="about">
+				<h3>About</h3>
+				{{#each about}}
+					<p>{{{this}}} </p>
+				{{/each}}
+				
 			</div>
 
-			<div class="org-mission">
-				<h3>Mission</h3>
-				<p>To help rescue and rehabilitate sexually exploited women and girls so that they can rebuild their lives for a better future.</p>
+			<div class="org-general-info">
+				<br/>
+				<span><strong>Year Established:</strong> {{estd}}</span>
+				<h3>Contact Info</h3>
+				<p>GPO Box {{gpoBox}}<br/>
+				{{address}}<br/>
+				Phone: {{phone}}<br/>
+				Fax: {{{fax}}}<br/>
+				Web: {{web}}<br/>
+				Email: {{email}}<br/>
+				</p>
+
 			</div>
-		</div>
-	</section>
-
-	<section class="paragraph">
-		<div class="container">
-		<div class="3points">
-			<h3>3 points to know</h3>
-			<ul>
-				<li><p>1. Assists sexually exploited girls, women and their children with building their lives by providing shelter, legal assistance, counseling, schooling, health education, and skills training.</p></li>
-				<li><p>2. Create awareness about self-protection from sexual exploitation.</p></li>
-				<li><p>3. Lobby for effective implementation of national/international laws involving child labor.</p></li>
-			</ul>
-		</div>	
-
-		<div class="about">
-			<h3>About</h3>
-			<p>Raksha Nepal (RN) is a non-government, non-profitable social organization that works for sexually exploited girls, women, and their children.  It also empowers and provides care and support to them.  
-
-			RN is run by women and girls who have been sexually exploited.  Because of this, the organization is dedicated to those women and girls who have landed knowingly and unknowingly in the dance bars, massage parlors, and cabin restaurants, where they are sexually exploited by the owners as well as by the customers. RN is committed to making these women and girls aware of how to protect themselves in their current roles.  RN also empowers them to build their capacity to identify alternative livelihood opportunities to start safe and respectable lives.  
-
-			RN believes that if women are confident and education the entire family and society benefits from it.  
-			</p>
-		</div>
-
-		<div class="org-general-info">
-			<span><strong>Year Established:</strong> 2004</span>
-			<h3>Contact Info</h3>
-			<p>GPO Box 24866<br/>
-			Kathmandu, Nepal<br/>
-			Phone: +977-1-4437552<br/>
-			Fax: +977-1-4024100<br/>
-			Web: www.rakshanepal.org<br/>
-			Email: infor@rakshanepal.org<br/>
-			</p>
-
-		</div>
-		</div>
-	</section>
+			</div>
+		</section>
+	</script>
 
 	<section id="list-projects">
 		<div class="container">
@@ -125,10 +133,25 @@
 		</div>
 	</section>
 
+	<section id="our-sponsors">
+		<div class="container">
+			<h2>Our Sponsors and Corporate Partners</h2>
+			<ul>
+				<li><img src="images/threadpaints.png" /></li>
+				<li><img src="images/olenepal.png" /></li>
+				<li><img src="images/butta.png" /></li>
+				<li><img src="images/flipkarma.png" /></li>
+				<li><img src="images/meroanswer.png" /></li>
+			</ul>
+		</div>
+	</section>
+
 </div>
 
+<script src="js/urls.js"></script>
+<script src="js/datas.js"></script>
 <script src="js/handlebars-v3.0.1.js"></script>
 <script src="js/jquery.min.js"></script>
-<script src="js/base.js"></script>
+<script src="js/orgprofile.js"></script>
 </body>
 </html>
