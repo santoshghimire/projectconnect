@@ -1,5 +1,5 @@
 from rest_framework import viewsets
-from rest_framework import generics
+# from rest_framework import generics
 from mainapp.serializers import UserSerializer, \
     OpportunityPostSerializer, NonProfitOrganizationSerializer,\
     VolunteerSerializer, ApplicationForOpportunitySerializer, OpportunityPostTypeSerializer,\
@@ -38,6 +38,11 @@ class OpportunityPostTypeViewSet(viewsets.ModelViewSet):
 class OpportunityPostLocationViewSet(viewsets.ModelViewSet):
     queryset = OpportunityPost.objects.values('location').distinct()
     serializer_class = OpportunityPostLocationSerializer
+
+
+class OpportunityPostTimeFrameViewSet(viewsets.ModelViewSet):
+    serializer_class = OpportunityPostLocationSerializer
+    queryset = OpportunityPost.objects.values('time_frame').distinct()
 
 
 class VolunteerViewSet(viewsets.ModelViewSet):

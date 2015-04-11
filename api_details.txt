@@ -1,0 +1,13 @@
+
+    "opportunities": "/opportunities/", # list
+    "opportunities": "/opportunities/1/", # individual
+
+    "project-types": "/project-types/", #list
+    "project-types": "/project-types/1/", #individual
+
+    "organizations": "/organizations/",
+    
+    "volunteers": "/volunteers/",
+    "application": "/application/",
+    "sponsers": "/sponsers/",
+    "locations": "/locations/"
