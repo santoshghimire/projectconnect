@@ -8,11 +8,11 @@
 
     /************/
 
-    function init () {
+   /* function init () {
         
     }
 
-    init();
+    init();*/
 
     function goToByScroll(id){
           // Remove "link" from the ID
