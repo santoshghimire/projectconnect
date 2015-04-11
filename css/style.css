@@ -209,10 +209,12 @@ section#home-info p#home-info-tag{
 	display: inline-block;
 	margin-right: 2%;
 	margin-bottom: 20px;
+	min-height: 335px;
 	border: 1px solid #aaa;
 	box-shadow: 0 0 2px #DEDDDD;
 	border-radius: 2px;
 	padding: 20px 0px; 
+	vertical-align: top;
 }
 #list-projects #projects aside.project:nth-child(3n+3){
 	margin-right: 0px;  

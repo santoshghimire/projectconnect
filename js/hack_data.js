@@ -80,7 +80,7 @@ var orgInfo = {
             year_established: "1996",
             email: "shaktisamuha.nepal@gmail.com",
             website: "http://shaktisamuha.org.np",
-            logo: "images/shakti.png",
+            logo: "image/shakti.png",
             picture_1: "",
             picture_2: ""            
         },
@@ -94,7 +94,7 @@ var orgInfo = {
             year_established: "2004",
             email: "infor@rakshanepal.org",
             website: "http://rakshanepal.org",
-            logo: "images/raksha.png",
+            logo: "image/raksha.png",
             picture_1: "",
             picture_2: ""            
         },
@@ -108,7 +108,7 @@ var orgInfo = {
             year_established: "1987",
             email: "cwin@mos.com.np",
             website: "http://www.cwin.org.np",
-            logo: "images/cwin.png",
+            logo: "image/cwin.png",
             picture_1: "",
             picture_2: ""            
         }
@@ -127,7 +127,7 @@ var orgInfo = {
         {vars : "c", datas : "More than a month"},
         {vars : "d", datas : "More than 3 months"}
     ]
-var projectAll = [
+    var projectAll = [
   {
       title: "Tutor trafficking survivors in English studies",
       description: "A volunteer is needed to tutor trafficking survivors with their English studies for 2 hours/week. This opportunity is a 2 month commitment.",
@@ -138,11 +138,10 @@ var projectAll = [
       purpose: "Build mentoring relationship to coach girls. Support education efforts to rehabilitate and empower at-risk youth. Build English skills.",
       projectType: "Tutoring",
       ngoName: "Raksha Nepal",
-      picture: "images/1.jpg",
+      picture: "image/1.png",
       category: "Internship",
       location: "Kathmandu, Nepal",
-      url: "projectsingle.html?pname=0",
-      urlOrg : "orgprofile.html?orgName=raksha"
+      url: "orgprofile.html?orgName=raksha"
   },
   {
       title: "Build event page for award-winning nonprofit’s 20th anniversary event",
@@ -154,11 +153,10 @@ var projectAll = [
       purpose: "Build your portfolio with impactful design projects. Support an award-winning nonprofit with their biggest event. Help an awesome nonprofit to raise money!",
       projectType: "Social Media",
       ngoName: "Shakti Samuha",
-      picture: "images/2.jpg",
+      picture: "image/2.png",
       category: "Volunteer",
       location: "Kathmandu, Nepal",
-      url: "projectsingle.html?pname=1",
-      urlOrg : "orgprofile.html?orgName=shakti"
+      url: "orgprofile.html?orgName=shakti"
   },
   {
     
@@ -172,11 +170,10 @@ var projectAll = [
       purpose: "Teach the kids on how to use some basic computer tools like word, spreadsheet, presentation, email and social media.",
       projectType: "Tutoring",
       ngoName: "Child Workers in Nepal (CWIN)",
-      picture: "images/3.jpg",
+      picture: "image/3.png",
       category: "Internship",
       location: "Ravi Bhawan, Kathmandu, Nepal",
-      url: "projectsingle.html?pname=2",
-      urlOrg : "orgprofile.html?orgName=cwin"
+      url: "orgprofile.html?orgName=cwin"
   },  
   {
     
@@ -190,11 +187,10 @@ var projectAll = [
       purpose: "Help our organization spread the good works that we are doing and connect us with doners and supportive masses.",
       projectType: "Social Media",
       ngoName: "Shakti Samuha",
-      picture: "images/4.jpg",
+      picture: "image/4.png",
       category: "Internship",
       location: "Kathmandu, Nepal",
-    url: "projectsingle.html?pname=3",
-    urlOrg : "orgprofile.html?orgName=shakti"
+    url: "orgprofile.html?orgName=shakti"
   },  
   {
     
@@ -208,13 +204,14 @@ var projectAll = [
       purpose: "Help manage the women’s shelter for good.",
       projectType: "Admin Assistant",
       ngoName: "Raksha Nepal",
-      picture: "images/5.jpg",
+      picture: "image/5.png",
       category: "Internship",
       location: "Kathmandu, Nepal",
-    url: "projectsingle.html?pname=4",
-    urlOrg : "orgprofile.html?orgName=raksha"
+    url: "orgprofile.html?orgName=raksha"
   },    
-  { 
+  {
+    
+    
       title: "Plan festival for nonprofit organizations",
       description: "We need an event manager to plan and organize our various kinds of festivals within the organization.",
       no_of_hours: "20 to 25 hours",
@@ -224,10 +221,9 @@ var projectAll = [
       purpose: "Better celebration at festivals",
       projectType: "Event Management",
       ngoName: "Child Workers in Nepal (CWIN)",
-      picture: "images/6.jpg",
+      picture: "image/6.png",
       category: "Internship",
       location: "Kathmandu, Nepal",
-      url: "projectsingle.html?pname=5",
-      urlOrg : "orgprofile.html?orgName=cwin"
+      url: "orgprofile.html?orgName=cwin"
   }
     ];
