@@ -30,46 +30,55 @@ list<!DOCTYPE html>
 			</nav>
 		</header>	
 
-		<section id="home-info">
-			<p id="home-info-main">Project Title Here</p>
-			<p id="home-info-tag">Category: Project Category Here</p>
-		</section>
+		
 	</div>
+
+	<div class="orgInfo">
+		<!-- org all info will be here -->
+	</div>
+	
+	<script id="orgInfo-template" type="text/x-handlebars-template">
+		<div class="container">
+		<section id="home-info">
+			<p id="home-info-main">{{title}}</p>
+			<p id="home-info-tag">{{category}}</p>
+		</section>
+		<div>
 
 	<section id="proj-info" style="background:#e2e2e2;">
 		<div class="container">
-			<span class="proj-org-name">Insert Organization Name Here</span><br/>
-			<span class="proj-org-cat">Insert Organization Category Here</span>
+			<span class="proj-org-name"><a href="{{urlOrg}}">{{ngoName}}</a></span><br/>
+			<span class="proj-org-cat">{{orgCategory}}</span>
 		</div>
 	</section>
 
 	<section class="paragraph">
 		<div class="container">
 		<div class="proj-image">
-			<img src="images/volunteer1.jpg"/>
+			<img src="{{picture}}"/>
 		</div>
 		<div class="about">
 			<h3>Description</h3>
-			<p>Etiam ultrices tempor ac adipiscing mus et pulvinar egestas magnis. Platea et non tempor dignissim eros? Egestas mattis rhoncus nunc, turpis et mauris pulvinar, porta, sit et ac magnis turpis, tortor magna, sed, a montes proin. In turpis vel porta, ut mauris! Magna et, nisi tincidunt amet dolor cras! Nisi, vel porta odio velit enim elementum sed turpis lacus massa! Augue cum augue scelerisque amet porttitor? Magna dolor enim sagittis proin augue! Porttitor pulvinar diam magnis turpis adipiscing ultricies dictumst, amet, pulvinar porttitor placerat cras, montes proin sit! Hac magna, dis velit. Lorem cursus amet cum parturient platea, nascetur? Porttitor! Habitasse, elit dictumst magna, parturient? Velit augue cursus! Mid lorem! Amet enim! Turpis velit! Cras in enim ultrices rhoncus montes.
+			<p>{{{description}}}
 			</p>
 
 			<h3>Requirements</h3>
-			<p>Etiam ultrices tempor ac adipiscing mus et pulvinar egestas magnis. Platea et non tempor dignissim eros? Egestas mattis rhoncus nunc, turpis et mauris pulvinar, porta, sit et ac magnis turpis, tortor magna, sed, a montes proin. In turpis vel porta, ut mauris! Magna et, nisi tincidunt amet dolor cras! Nisi, vel porta odio velit enim elementum sed turpis lacus massa! Augue cum augue scelerisque amet porttitor? Magna dolor enim sagittis proin augue! Porttitor pulvinar diam magnis turpis adipiscing ultricies dictumst, amet, pulvinar porttitor placerat cras, montes proin sit! Hac magna, dis velit. Lorem cursus amet cum parturient platea, nascetur? Porttitor! Habitasse, elit dictumst magna, parturient? Velit augue cursus! Mid lorem! Amet enim! Turpis velit! Cras in enim ultrices rhoncus montes.
+			<p>{{{requirements}}}
 			</p>
 		</div>
 		<div class="3points">
 			<h3>Project Details</h3>
 			<ul>
-				<li><p><strong>Number of hours:</strong> 20hours to 50hours</p></li>
-				<li><p><strong>Starting Date:</strong> May 1, 2015</p></li>
-				<li><p><strong>Time Frame:</strong> 3 months</p></li>
-				<li><p><strong>Location:</strong> 3 months</p></li>
+				<li><p><strong>Number of hours:</strong> {{no_of_hours}}</p></li>
+				<li><p><strong>Starting Date:</strong> {{starting_date}}</p></li>
+				<li><p><strong>Time Frame:</strong> {{time_frame}}</p></li>
+				<li><p><strong>Location:</strong> {{location}}</p></li>
 			</ul>
 		</div>	
 
 		<div class="3points">
 			<h3>Purpose of the Project</h3>
-			<p>Etiam ultrices tempor ac adipiscing mus et pulvinar egestas magnis. Platea et non tempor dignissim eros? Egestas mattis rhoncus nunc, turpis et mauris pulvinar, porta, sit et ac magnis turpis, tortor magna, sed, a montes proin. In turpis vel porta, ut mauris!</p>
+			<p>{{purpose}}</p>
 		</div>	
 
 
@@ -104,8 +113,10 @@ list<!DOCTYPE html>
 
 </div>
 
+<script src="js/urls.js"></script>
+<script src="js/datas.js"></script>
 <script src="js/handlebars-v3.0.1.js"></script>
 <script src="js/jquery.min.js"></script>
-<script src="js/base.js"></script>
+<script src="js/projectsingle.js"></script>
 </body>
 </html>

@@ -127,7 +127,7 @@ var orgInfo = {
         {vars : "c", datas : "More than a month"},
         {vars : "d", datas : "More than 3 months"}
     ]
-    var projectAll = [
+var projectAll = [
   {
       title: "Tutor trafficking survivors in English studies",
       description: "A volunteer is needed to tutor trafficking survivors with their English studies for 2 hours/week. This opportunity is a 2 month commitment.",
@@ -141,7 +141,8 @@ var orgInfo = {
       picture: "images/1.jpg",
       category: "Internship",
       location: "Kathmandu, Nepal",
-      url: "orgprofile.html?orgName=raksha"
+      url: "projectsingle.html?pname=0",
+      urlOrg : "orgprofile.html?orgName=raksha"
   },
   {
       title: "Build event page for award-winning nonprofit’s 20th anniversary event",
@@ -156,7 +157,8 @@ var orgInfo = {
       picture: "images/2.jpg",
       category: "Volunteer",
       location: "Kathmandu, Nepal",
-      url: "orgprofile.html?orgName=shakti"
+      url: "projectsingle.html?pname=1",
+      urlOrg : "orgprofile.html?orgName=shakti"
   },
   {
     
@@ -173,7 +175,8 @@ var orgInfo = {
       picture: "images/3.jpg",
       category: "Internship",
       location: "Ravi Bhawan, Kathmandu, Nepal",
-      url: "orgprofile.html?orgName=cwin"
+      url: "projectsingle.html?pname=2",
+      urlOrg : "orgprofile.html?orgName=cwin"
   },  
   {
     
@@ -190,7 +193,8 @@ var orgInfo = {
       picture: "images/4.jpg",
       category: "Internship",
       location: "Kathmandu, Nepal",
-    url: "orgprofile.html?orgName=shakti"
+    url: "projectsingle.html?pname=3",
+    urlOrg : "orgprofile.html?orgName=shakti"
   },  
   {
     
@@ -207,11 +211,10 @@ var orgInfo = {
       picture: "images/5.jpg",
       category: "Internship",
       location: "Kathmandu, Nepal",
-    url: "orgprofile.html?orgName=raksha"
+    url: "projectsingle.html?pname=4",
+    urlOrg : "orgprofile.html?orgName=raksha"
   },    
-  {
-    
-    
+  { 
       title: "Plan festival for nonprofit organizations",
       description: "We need an event manager to plan and organize our various kinds of festivals within the organization.",
       no_of_hours: "20 to 25 hours",
@@ -224,6 +227,7 @@ var orgInfo = {
       picture: "images/6.jpg",
       category: "Internship",
       location: "Kathmandu, Nepal",
-      url: "orgprofile.html?orgName=cwin"
+      url: "projectsingle.html?pname=5",
+      urlOrg : "orgprofile.html?orgName=cwin"
   }
     ];
