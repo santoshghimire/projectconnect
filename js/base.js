@@ -8,8 +8,10 @@
         organizations: "/organizations/",
         volunteers: "/volunteers/",
         application: "/application/"
-    }
+    };
 
+    var arrayProjectsByType = [],arrayProjectsByTime=[];
+    var types = 0, time = 0; //just check variables
     var organizations = [
         {
             name: "Shakti Samuha",
@@ -25,45 +27,60 @@
             picture_1: null,
             picture_2: null,
         }
-    ]
+    ];
+
+    var projectType = [
+        "teaching",
+        "marketing",
+        "fund raising",
+    ];
 
     var projectAll = [
         {
-            title : "The title",
+            title : "The title1",
             location : "location",
             picture : "images/project_img.jpg",
             description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit minus facilis itaque, similique dolorum? Ipsa quaerat neque aliquid corporis modi alias, totam pariatur aut ab autem ut rem ducimus voluptatibus!",
-            projectType : "Hawa",
+            projectType : "teaching",
             ngoName : "ewwwwweeew sdfd",
             category : "smth like",
         },
         {
-            title : "The title",
+            title : "The title2",
             location : "location",
             picture : "images/project_img.jpg",
             description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit minus facilis itaque, similique dolorum? Ipsa quaerat neque aliquid corporis modi alias, totam pariatur aut ab autem ut rem ducimus voluptatibus!",
-            projectType : "Hawa",
+            projectType : "marketing",
             ngoName : "ewwwwweeew sdfd",
             category : "smth like",
         },
         {
-            title : "The title",
+            title : "The title3",
             location : "location",
             picture : "images/project_img.jpg",
             description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit minus facilis itaque, similique dolorum? Ipsa quaerat neque aliquid corporis modi alias, totam pariatur aut ab autem ut rem ducimus voluptatibus!",
-            projectType : "Hawa",
+            projectType : "teaching",
             ngoName : "ewwwwweeew sdfd",
             category : "smth like",
         },{
-            title : "The title",
+            title : "The title4",
             location : "location",
             picture : "images/project_img.jpg",
             description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit minus facilis itaque, similique dolorum? Ipsa quaerat neque aliquid corporis modi alias, totam pariatur aut ab autem ut rem ducimus voluptatibus!",
-            projectType : "Hawa",
+            projectType : "fund raising",
             ngoName : "ewwwwweeew sdfd",
             category : "smth like",
         }
     ]
+
+
+    /************/
+
+    function init () {
+        
+    }
+
+    init();
 
     function goToByScroll(id){
           // Remove "link" from the ID
@@ -78,20 +95,91 @@
        goToByScroll('filter-projects');
     });
 
-    function populateProjects () {
+    function populateProjects (arrayProjects) {
         var source   = $("#projects-template").html();
         var template = Handlebars.compile(source);
-        console.log(projectAll);
+        // console.log(arrayProjects);
         var context = {
-            projects : projectAll
+            projects : arrayProjects
         };
+        console.log("hello");
+        console.log(context);
         var html    = template(context);
+
         console.log(html);
         $('#projects').html(html);
     }
-    populateProjects();
+    populateProjects(projectAll);
+
+    (function populateTypes () {
+            var source   = $("#projectType-template").html();
+            var template = Handlebars.compile(source);
+            console.log(projectAll);
+            var context = {
+                options : projectType
+            };
+            var html    = template(context);
+            console.log(html);
+            $('#filter-1').html(html);
+        })();
+
+    /*get the projects according to type*/
+    function getProjectsByType () {
+        if (type===0) {
+            arrayProjectsByType = projectAll;
+        } else {
+            var projectType = type;
+            var arrayProjects = [];
+            for (var i = 0; i < projectAll.length; i++) {
+                if(projectAll[i].projectType === projectType) {
+                    arrayProjects.push(projectAll[i]);
+                }
+            };
+            arrayProjectsByType = arrayProjects;
+        // populateProjects(arrayProjects);
+        }
+        getProjectsByTime();
+    }
+
+    /*get the projects according to time*/
+    function getProjectsByTime () {
+        var arrayProjects = null;
+        if (time===0 && type ===0) {
+            arrayProjectsByTime = projectAll;
+            arrayProjects = arrayProjectsByType;
+        } else if (type !== 0 && time ===0) {
+            arrayProjects = arrayProjectsByType;
+        } else {
+            var projectTime = time;
+            arrayProjects = [];
+            for (var i = 0; i < projectAll.length; i++) {
+                if(projectAll[i].projectType === projectTime) {
+                    arrayProjects.push(projectAll[i]);
+                }
+            };
+            arrayProjectsByType = arrayProjects;
+        // populateProjects(arrayProjects);
+        }
+        console.log(arrayProjects);
+        console.log("hskfdsfsd");
+        populateProjects(arrayProjects);
+    }
+
+
+
+
     $('#filter-projects').on('change',"#filter-1",function () {
         // alert("hello");
+        var val = $(this).val();
+        // var val = $('#filter-projects option:selected').val()
+        if (val === "1") {
+            type = 0;
+            getProjectsByType();
+        } else {
+            type = val;
+            getProjectsByType();    
+        }
+        
     })
 
 })(jQuery)

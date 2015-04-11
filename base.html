@@ -18,14 +18,14 @@
 	<div class="container">
 		<header>
 			<div id="logo">
-				<img src="images/logo.png">
+				<a href="base.html"><img src="images/logo.png"></a>
 			</div>
 			<nav>
 				<ul>
 					<li><a href="project.html">Find a Project</a></li>
-					<li><a href="#">List a Project</a></li>
-					<li><a href="#">Be a Mentor</a></li>
-					<li><a href="#">Why Volunteer</a></li>
+					<li><a href="org.html">List a Project</a></li>
+					<li><a href="sponsor.html">Be a Sponsor</a></li>
+					<li><a href="volunteer.html">Why Volunteer</a></li>
 				</ul>
 			</nav>
 		</header>	
@@ -43,14 +43,17 @@
 			<form action="#">
 				<select id="filter-1">
 					<option disabled>View Project by types</option>
-					<option value="this">This</option>
-					<option value="this">That</option>
-					<option value="this">This</option>
-					<option value="this">Bleh</option>
 				</select>
+				<script id="projectType-template" type="text/x-handlebars-template">
+					<option value="1" >View Project by types</option>
+					{{#each options}}
+						<option value="{{this}}">{{this}}</option>
+					{{/each}}
+					
+				</script>
 
 				<select id="filter-2" placeholder="View Project by types">
-					<!-- <option disabled>View Project by types</option> -->
+					<option disabled="disabled" selected="selected">View Project by Number of hours</option>
 					<option value="this">This</option>
 					<option value="this">That</option>
 					<option value="this">This</option>
@@ -83,6 +86,9 @@
 					<a href="#" class="view-more">Volunteer</a> 
 				</aside>-->		
 
+			
+			
+			<a href="#" class="view-more-main">View All Projects</a>
 			</div>
 			<script id="projects-template" type="text/x-handlebars-template">
 				{{#each projects}}
@@ -104,7 +110,6 @@
 				{{/each}}
 			</script>
 
-			<a href="#" class="view-more-main">View All Projects</a>
 		</div>
 	</section>
 

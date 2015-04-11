@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Awesome website. Yeah!!</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<body class="org">
+
+
+<div id="side-wrapper">	
+	<p>Help Non-Profits.<br/>Help Stop Trafficking.</p>
+
+	<a href="#">How It Works</a>
+</div>
+
+<div id="main-wrapper">
+	<div class="container">
+		<header>
+			<div id="logo">
+				<a href="base.html"><img src="images/logo.png"></a>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="project.html">Find a Project</a></li>
+					<li><a href="org.html">List a Project</a></li>
+					<li><a href="sponsor.html">Be a Sponsor</a></li>
+					<li><a href="volunteer.html">Why Volunteer</a></li>
+				</ul>
+			</nav>
+		</header>	
+
+		<section id="home-info">
+			<p id="home-info-main">Apply For a Project</p>
+			<p id="home-info-tag">This is not just an opportunity to enrich your experience. This is also an opportunity to help fund the non-profit you're voliunteering/interning.</p>
+		</section>
+	</div>
+
+	<section id="list-form">
+		<div class="container">
+			<form id="apply-form" action="#">
+				<input type="text" placeholder="First Name" />
+				<input type="text" placeholder="Last Name" />
+				<select type="text">
+					<option disabled="disabled" selected="selected" value="0">Choose your gender</option>
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+					<option value="other">Other</option>
+				</select>
+				<input type="text" placeholder="Address" />
+				<input type="number" placeholder="Contact Number" />
+				<input type="email" placeholder="Email Address" />
+				<input type="date" placeholder="Date of Birth" />
+				<input type="text" placeholder="Reference Person" />
+				<br/>
+				<label name="cv"></label>
+				<input type="file" placeholder="Upload your CV" name="cv" accept="pdf/doc/docx/txt/*" />
+				
+				<textarea placeholder="Write a short reasons to your interest in this project"></textarea>
+
+				<p>Yay! Almost Done! Good Luck. </p>
+
+
+				<p>If you were selected for the project, which of the following business would you choose to fund the non-profit organization.<br/><strong>REMEMBER! The non-profit will be funded only if you complete the project.</strong></p>
+
+				<select name="sponsor">
+					<option value="0" disabled="disabled" selected="selected">Choose a sponsor</option>
+					<option value="1">Coca-Cola</option>
+					<option value="2">Tuborg</option>
+					<option value="1">Mega Bank</option>
+					<option value="1">Islington College</option>
+				</select>
+				<br/>
+				<br/>
+				<input type="submit" value="Apply Now" name="submit" />
+			</form>
+		</div>
+	</section>
+
+	<section id="our-partners">
+		<div class="container">
+			<h2>Our Non-Profit Partners</h2>
+			<ul>
+				<li><img src="images/shakti.png" /></li>
+				<li><img src="images/rakhsha.png" /></li>
+				<li><img src="images/cwin.png" /></li>
+			</ul>
+		</div>
+	</section>
+
+</div>
+
+<script src="js/handlebars-v3.0.1.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/base.js"></script>
+</body>
+</html>
