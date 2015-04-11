@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Awesome website. Yeah!!</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<body class="org">
+
+
+<div id="side-wrapper">	
+	<p>Help Non-Profits.<br/>Help Stop Trafficking.</p>
+
+	<a href="#">How It Works</a>
+</div>
+
+<div id="main-wrapper">
+	<div class="container">
+		<header>
+			<div id="logo">
+				<a href="base.html"><img src="images/logo.png"></a>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="project.html">Find a Project</a></li>
+					<li><a href="#" style="color:#000;">List a Project</a></li>
+					<li><a href="#">Be a Mentor</a></li>
+					<li><a href="volunteer.html">Why Volunteer</a></li>
+				</ul>
+			</nav>
+		</header>	
+
+		<section id="home-info">
+			<p id="home-info-main">Find volunteers and<br/>professionals to help you</p>
+			<p id="home-info-tag">Get human resources to help you act better</p>
+		</section>
+	</div>
+
+	<section id="org-login">
+		<div class="container">
+			<a href="#">List a Project</a>
+			<a href="#">Login / Register</a>
+		</div>
+	</section>
+
+	<section id="list-projects">
+		<div class="container">
+			<h2>Recent Projects Posted by Non-profit Organizations like you</h2>
+			<div id="projects">			
+			<script id="projects-template" type="text/x-handlebars-template">
+				{{#each projects}}
+				<aside class="project">
+					<h3 class="project-title">{{{this.title}}}</h3>	
+					<h5 class="project-location">{{this.location}}</h5>
+					<div class="project-img">
+						<img src="{{this.picture}}"/>
+						<div class="overlay-description">
+							<p>{{this.description}}</p>
+							<span>{{this.projectType}}</span>
+						</div>
+					</div>
+					<span class="project-ngo">{{{this.ngoName}}}</span>
+					<span class="project-category">{{{this.category}}}</span>
+
+					<a href="#" class="view-more">Volunteer</a>
+				</aside>
+				{{/each}}
+			</script>
+			</div>
+			<a href="#" class="view-more-main">View All Projects</a>
+
+		</div>
+	</section>
+
+	<section id="our-partners">
+		<div class="container">
+			<h2>Our Non-Profit Partners</h2>
+			<ul>
+				<li><img src="images/shakti.png" /></li>
+				<li><img src="images/rakhsha.png" /></li>
+				<li><img src="images/cwin.png" /></li>
+			</ul>
+		</div>
+	</section>
+
+</div>
+
+<script src="js/handlebars-v3.0.1.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/base.js"></script>
+</body>
+</html>

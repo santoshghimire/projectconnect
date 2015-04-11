@@ -1,0 +1,134 @@
+list<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Awesome website. Yeah!!</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<body class="orgprofile">
+
+
+<div id="side-wrapper">	
+	<p>Help Non-Profits.<br/>Help Stop Trafficking.</p>
+
+	<a href="#">How It Works</a>
+</div>
+
+<div id="main-wrapper">
+	<div class="container">
+		<header>
+			<div id="logo">
+				<a href="base.html"><img src="images/logo.png"></a>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="project.html">Find a Project</a></li>
+					<li><a href="org.html" >List a Project</a></li>
+					<li><a href="mentor.html">Be a Mentor</a></li>
+					<li><a href="volunteer.html">Why Volunteer</a></li>
+				</ul>
+			</nav>
+		</header>	
+
+		<section id="home-info">
+			<p id="home-info-main">Raksha Nepal</p>
+			<p id="home-info-tag">Care and Support for sexually exploited girls, women and their children</p>
+		</section>
+	</div>
+
+	<section id="org-info">
+		<div class="container">
+			<div class="org-img">
+				<img src="images/rakhsha.png">
+			</div>
+
+			<div class="org-mission">
+				<h3>Mission</h3>
+				<p>To help rescue and rehabilitate sexually exploited women and girls so that they can rebuild their lives for a better future.</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="paragraph">
+		<div class="container">
+		<div class="3points">
+			<h3>3 points to know</h3>
+			<ul>
+				<li><p>1. Assists sexually exploited girls, women and their children with building their lives by providing shelter, legal assistance, counseling, schooling, health education, and skills training.</p></li>
+				<li><p>2. Create awareness about self-protection from sexual exploitation.</p></li>
+				<li><p>3. Lobby for effective implementation of national/international laws involving child labor.</p></li>
+			</ul>
+		</div>	
+
+		<div class="about">
+			<h3>About</h3>
+			<p>Raksha Nepal (RN) is a non-government, non-profitable social organization that works for sexually exploited girls, women, and their children.  It also empowers and provides care and support to them.  
+
+			RN is run by women and girls who have been sexually exploited.  Because of this, the organization is dedicated to those women and girls who have landed knowingly and unknowingly in the dance bars, massage parlors, and cabin restaurants, where they are sexually exploited by the owners as well as by the customers. RN is committed to making these women and girls aware of how to protect themselves in their current roles.  RN also empowers them to build their capacity to identify alternative livelihood opportunities to start safe and respectable lives.  
+
+			RN believes that if women are confident and education the entire family and society benefits from it.  
+			</p>
+		</div>
+
+		<div class="org-general-info">
+			<span><strong>Year Established:</strong> 2004</span>
+			<h3>Contact Info</h3>
+			<p>GPO Box 24866<br/>
+			Kathmandu, Nepal<br/>
+			Phone: +977-1-4437552<br/>
+			Fax: +977-1-4024100<br/>
+			Web: www.rakshanepal.org<br/>
+			Email: infor@rakshanepal.org<br/>
+			</p>
+
+		</div>
+		</div>
+	</section>
+
+	<section id="list-projects">
+		<div class="container">
+			<h2>Recent Projects Posted by Non-profit Organizations like you</h2>
+			<div id="projects">			
+			<script id="projects-template" type="text/x-handlebars-template">
+				{{#each projects}}
+				<aside class="project">
+					<h3 class="project-title">{{{this.title}}}</h3>	
+					<h5 class="project-location">{{this.location}}</h5>
+					<div class="project-img">
+						<img src="{{this.picture}}"/>
+						<div class="overlay-description">
+							<p>{{this.description}}</p>
+							<span>{{this.projectType}}</span>
+						</div>
+					</div>
+					<span class="project-ngo">{{{this.ngoName}}}</span>
+					<span class="project-category">{{{this.category}}}</span>
+
+					<a href="#" class="view-more">Volunteer</a>
+				</aside>
+				{{/each}}
+			</script>
+			</div>
+			<a href="#" class="view-more-main">View All Projects</a>
+
+		</div>
+	</section>
+
+	<section id="our-partners">
+		<div class="container">
+			<h2>Our Non-Profit Partners</h2>
+			<ul>
+				<li><img src="images/shakti.png" /></li>
+				<li><img src="images/rakhsha.png" /></li>
+				<li><img src="images/cwin.png" /></li>
+			</ul>
+		</div>
+	</section>
+
+</div>
+
+<script src="js/handlebars-v3.0.1.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/base.js"></script>
+</body>
+</html>
