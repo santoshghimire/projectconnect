@@ -399,4 +399,57 @@ body.orgprofile .paragraph ul{ list-style-type: disc;}
 body.orgprofile .paragraph ul li{
 	margin-top: 10px;
 }
+body.orgprofile .paragraph span{ font-family: "Museo300-Regular", sans-serif; margin-bottom: 20px; font-size: 20px; }
+
+#list-form{
+	width: 100%; 
+	padding-bottom: 50px; 
+}
+#list-form input, #list-form select{
+	width: 60%; 
+	height: 50px;
+	font-family: "Museo300-Regular";
+	font-size: 20px;
+	color: #333;
+	margin-bottom: 10px;
+	border: 1px solid #aaa;
+	border-radius: 2px;
+	padding: 10px; 
+}
+#list-form input[type="file"]{
+	border: none;
+}
+#list-form p{
+	font-family: "Museo300-Regular";
+	font-size: 20px;
+	color: #333;
+	margin: 10px 0px;
+	line-height: 1.5;
+}
+#list-form label{ font-family: "Museo300-Regular"; font-size: 22px;  }
+#list-form select{ height: 60px; width: 63%;}
+#list-form input[type="submit"]{
+	width: 50%;
+	padding: 16px;
+	background: #712b90;
+	font-size: 20px;
+	color: #fff;
+	font-family: "Museo300-Regular";
+	text-align: center;
+	border: none;
+	border-radius: 2px;
+	cursor: pointer;
+}
+#list-form textarea{
+	width: 60%; 
+	height: 150px;
+	font-family: "Museo300-Regular";
+	font-size: 20px;
+	color: #333;
+	margin-bottom: 10px;
+	border: 1px solid #aaa;
+	border-radius: 2px;
+	padding: 10px; 
+}
+
 

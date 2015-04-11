@@ -31,44 +31,34 @@
 		</header>	
 
 		<section id="home-info">
-			<p id="home-info-main">Find volunteers and<br/>professionals to help you</p>
-			<p id="home-info-tag">Get human resources to help you act better</p>
+			<p id="home-info-main">List a Project</p>
+			<p id="home-info-tag">Well-provided description will help you get good human resources.</p>
 		</section>
 	</div>
 
-	<section id="org-login">
+	<section id="list-form">
 		<div class="container">
-			<a href="#">List a Project</a>
-			<a href="#">Login / Register</a>
-		</div>
-	</section>
+			<form id="list-a-project" action="#">
+				<input type="text" placeholder="Title of your project" />
+				<input type="text" placeholder="Description" />
+				<input type="text" placeholder="Project Category" />
+				<input type="text" placeholder="Number of hours" />
+				<input type="date" placeholder="Starting Date" />
+				<input type="text" placeholder="Time period of the Project" />
+				<input type="text" placeholder="Requirements (if any)" />
+				<input type="text" placeholder="Location" />
+				<select name="type">
+					<option value="0" disabled="disabled" selected="selected">Volunteer/Internship</option>
+					<option value="volunteer">Volunteer</option>
+					<option value="internship">Internship</option>
+				</select>
+				<br/>
+				<label name="project_picture">Upload a Picture</label>
+				<input type="file" placeholder="Upload picture" accept="image/*" name="project_picture" />
 
-	<section id="list-projects">
-		<div class="container">
-			<h2>Recent Projects Posted by Non-profit Organizations like you</h2>
-			<div id="projects">			
-			<script id="projects-template" type="text/x-handlebars-template">
-				{{#each projects}}
-				<aside class="project">
-					<h3 class="project-title">{{{this.title}}}</h3>	
-					<h5 class="project-location">{{this.location}}</h5>
-					<div class="project-img">
-						<img src="{{this.picture}}"/>
-						<div class="overlay-description">
-							<p>{{this.description}}</p>
-							<span>{{this.projectType}}</span>
-						</div>
-					</div>
-					<span class="project-ngo">{{{this.ngoName}}}</span>
-					<span class="project-category">{{{this.category}}}</span>
-
-					<a href="#" class="view-more">Volunteer</a>
-				</aside>
-				{{/each}}
-			</script>
-			</div>
-			<a href="#" class="view-more-main">View All Projects</a>
-
+				<p>Yay! Almost Done! Good Luck. </p>
+				<input type="submit" value="Complete" name="submit" />
+			</form>
 		</div>
 	</section>
 
