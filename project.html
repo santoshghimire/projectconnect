@@ -43,13 +43,14 @@
 					<option value="this">Bleh</option>
 				</select>
 
-				<select id="filter-2">
+				<!-- <select id="filter-2">
 					<option disabled="disabled" selected="selected">View Project by Number of hours</option>
 					<option value="this">This</option>
 					<option value="this">That</option>
 					<option value="this">This</option>
 					<option value="this">Bleh</option>
-				</select>
+				</select> -->
+				<input type="text" id="filter-2" placeholder="Number of hours" >
 
 				<select id="filter-3">
 					<option disabled="disabled" selected="selected">View Project by Time Frame</option>
@@ -60,14 +61,6 @@
 				</select>
 
 				<select id="filter-4">
-					<option disabled="disabled" selected="selected">View Project by Starting Date</option>
-					<option value="this">This</option>
-					<option value="this">That</option>
-					<option value="this">This</option>
-					<option value="this">Bleh</option>
-				</select>
-
-				<select id="filter-5">
 					<option disabled="disabled" selected="selected">View Project by Location</option>
 					<option value="this">This</option>
 					<option value="this">That</option>
@@ -75,7 +68,7 @@
 					<option value="this">Bleh</option>
 				</select>
 
-				<select id="filter-6">
+				<select id="filter-5">
 					<option disabled="disabled" selected="selected">View Project by Organization Name</option>
 					<option value="this">This</option>
 					<option value="this">That</option>
@@ -83,13 +76,13 @@
 					<option value="this">Bleh</option>
 				</select>
 
-				<select id="filter-7">
+				<select id="filter-6">
 					<option disabled="disabled" selected="selected">Volunteer/Internship</option>
 					<option value="this">Volunteer</option>
 					<option value="this">Internship</option>
 				</select>
 
-				<input type="submit"/>
+				<input class="submit" type="submit"/>
 			</form>
 		</div>
 	</section>
@@ -98,7 +91,8 @@
 		<div class="container">
 			<div id="projects">
 
-				<script id="projects-template" type="text/x-handlebars-template">
+			</div>
+			<script id="projects-template" type="text/x-handlebars-template">
 					{{#each projects}}
 					<aside class="project">
 						<h3 class="project-title">{{{this.title}}}</h3>	
@@ -113,12 +107,10 @@
 						<span class="project-ngo">{{{this.ngoName}}}</span>
 						<span class="project-category">{{{this.category}}}</span>
 
-						<a href="#" class="view-more">Volunteer</a>
+						<a href="{{url}}" class="view-more">Volunteer</a>
 					</aside>
 					{{/each}}
 				</script>
-
-			</div>
 		</div>
 	</section>
 
@@ -135,7 +127,10 @@
 
 </div>
 
+<script src="js/urls.js"></script>
+<script src="js/datas.js"></script>
+<script src="js/handlebars-v3.0.1.js"></script>
 <script src="js/jquery.min.js"></script>
-<script src="js/base.js"></script>
+<script src="js/project.js"></script>
 </body>
 </html>
