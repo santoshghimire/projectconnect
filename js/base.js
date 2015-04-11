@@ -98,12 +98,15 @@
     function populateProjects (arrayProjects) {
         var source   = $("#projects-template").html();
         var template = Handlebars.compile(source);
-        // console.log(projectAll);
+        // console.log(arrayProjects);
         var context = {
             projects : arrayProjects
         };
+        console.log("hello");
+        console.log(context);
         var html    = template(context);
-        // console.log(html);
+
+        console.log(html);
         $('#projects').html(html);
     }
     populateProjects(projectAll);
@@ -140,14 +143,15 @@
 
     /*get the projects according to time*/
     function getProjectsByTime () {
+        var arrayProjects = null;
         if (time===0 && type ===0) {
             arrayProjectsByTime = projectAll;
-            var arrayProjects = arrayProjectsByTime;
+            arrayProjects = arrayProjectsByType;
         } else if (type !== 0 && time ===0) {
-            var arrayProjects = arrayProjectsByType;
+            arrayProjects = arrayProjectsByType;
         } else {
             var projectTime = time;
-            var arrayProjects = [];
+            arrayProjects = [];
             for (var i = 0; i < projectAll.length; i++) {
                 if(projectAll[i].projectType === projectTime) {
                     arrayProjects.push(projectAll[i]);
@@ -156,6 +160,8 @@
             arrayProjectsByType = arrayProjects;
         // populateProjects(arrayProjects);
         }
+        console.log(arrayProjects);
+        console.log("hskfdsfsd");
         populateProjects(arrayProjects);
     }
 
