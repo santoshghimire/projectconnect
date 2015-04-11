@@ -451,5 +451,41 @@ body.orgprofile .paragraph span{ font-family: "Museo300-Regular", sans-serif; ma
 	border-radius: 2px;
 	padding: 10px; 
 }
+#proj-info{ padding: 30px 0px;}
 
+#proj-info span{
+	font-family: "Museo300-Regular";
+	font-size: 18px;
+	color: #000;
+	line-height: 1.4; 
+	text-align: left;
+	clear: both;
+}
+#proj-info span.proj-org-name{
+	color: #712b90;
+	text-transform: uppercase;
+}
 
+body.projsingle .paragraph h3{ 
+	margin-top: 30px; 
+	font-family: "Open Sans", sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	line-height: 1.8;
+	color: #000; 
+	margin: 30px 0px 10px; 
+}
+body.projsingle a.view-more{
+	background: #712b90;
+	width: 20%;
+	float: left;
+	padding: 14px;
+	font-size: 18px;
+	font-family: "Museo300-Regular";
+	color: #fff;
+	border: none;
+	border-radius: 2px;
+	text-decoration: none; 
+	margin-top: 30px;
+	text-align: center;
+}
