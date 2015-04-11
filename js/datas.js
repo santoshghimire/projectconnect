@@ -39,7 +39,7 @@
             ngoName : "ewwwwweeew sdfd",
             category : "smth like",
             timeSpanVar : "a",
-            url : "?smth"
+            url : "orgprofile.html?smth"
         },
         {
             title : "The title2",

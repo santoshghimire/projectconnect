@@ -40,12 +40,23 @@
         url+="&location="+location+"&org="+org+"&workType="+workType;
         console.log("url "+url);
 
-        $.getJSON( url, function( data ) {
-            populateProjects (data);
-        });
+        /*try {
+            url = "nth";
+            $.getJSON( url, function( data ) {
+                populateProjects (data);
+            });
+        } catch (e) {
+            alert("hello1");
+            populateProjects (projectAll);
+        }*/
+        populateProjects (projectAll);
     })
 
     function populateProjects (arrayProjects) {
+        /*if (arrayProjects === null) {
+            arrayProjects = projectAll;
+        };*/
+        // alert("hello");
         var source   = $("#projects-template").html();
         var template = Handlebars.compile(source);
         // console.log(arrayProjects);
