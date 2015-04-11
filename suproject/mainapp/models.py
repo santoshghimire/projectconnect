@@ -69,6 +69,7 @@ class Volunteer(models.Model):
     )
     address = models.CharField(max_length=400)
     contact_number = models.CharField(max_length=15)
+    email = models.EmailField()
     date_of_birth = models.DateField()
     reference_person = models.ForeignKey('self', null=True)
 
@@ -89,3 +90,12 @@ class ApplicationForOpportunity(models.Model):
 
     def __unicode__(self):
         return self.interest_reason
+
+
+class Sponser(models.Model):
+    """
+    A model that saves the details of Sponsers that commit a fixed
+    amount of money to be donated everytime a project is completed.
+    """
+    name = models.CharField(max_length=200)
+    logo = models.ImageField(upload_to='sponsers/logo')

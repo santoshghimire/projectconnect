@@ -64,11 +64,11 @@
       "starting_date": "2015-05-01",
       "requirements": "Fluent English speaker and Female",
       "purpose": "Build mentoring relationship to coach girls. Support education efforts to rehabilitate and empower at-risk youth. Build English skills.",
-      "type_of_work": "English Tutoring",
+      "type_of_work": "Tutoring",
       "NGO": 2,
       "picture": "",
-      "category": "Volunteer",
-      "location": "Raksha Nepal, Kathmandu, Nepal"
+      "category": "Internship",
+      "location": "Kathmandu, Nepal"
     }
   },
   {
@@ -82,11 +82,11 @@
       "starting_date": "2015-12-01",
       "requirements": "Proficient at front-end design. Web development skills.",
       "purpose": "Build your portfolio with impactful design projects. Support an award-winning nonprofit with their biggest event. Help an awesome nonprofit to raise money!",
-      "type_of_work": "English Tutoring",
+      "type_of_work": "Social Media",
       "NGO": 1,
       "picture": "",
       "category": "Volunteer",
-      "location": "Shakti Samuha, Kathmandu, Nepal"
+      "location": "Kathmandu, Nepal"
     }
   },
   {
@@ -100,13 +100,67 @@
       "starting_date": "2015-12-21",
       "requirements": "Proficient at basic computer skills, email and internet.",
       "purpose": "Teach the kids on how to use some basic computer tools like word, spreadsheet, presentation, email and social media.",
-      "type_of_work": "Teaching computer skills",
+      "type_of_work": "Tutoring",
       "NGO": 3,
       "picture": "",
-      "category": "Volunteer",
-      "location": "CWIN HQ, Ravi Bhawan, Kathmandu"
+      "category": "Internship",
+      "location": "Ravi Bhawan, Kathmandu, Nepal"
     }
   },  
+  {
+    "model": "mainapp.opportunitypost",
+    "pk": 4,
+    "fields": {
+      "title": "Lead social media strategy for award-winning nonprofit",
+      "description": "We need a social media rockstar to help us workout the social media strategy and online presence.",
+      "no_of_hours": "20-25 hours",
+      "time_frame": "One month",
+      "starting_date": "2015-10-21",
+      "requirements": "Proficient at social media use, strategic skills in making a unique social media presence.",
+      "purpose": "Help our organization spread the good works that we are doing and connect us with doners and supportive masses.",
+      "type_of_work": "Social Media",
+      "NGO": 1,
+      "picture": "",
+      "category": "Internship",
+      "location": "Kathmandu, Nepal"
+    }
+  },  
+  {
+    "model": "mainapp.opportunitypost",
+    "pk": 5,
+    "fields": {
+      "title": "Support women’s shelter as Admin Assistant",
+      "description": "We need someone to help us manage and organize the women's shelter.",
+      "no_of_hours": "60-65 hours",
+      "time_frame": "Three month",
+      "starting_date": "2015-12-01",
+      "requirements": "Proficient at communication and management skills.",
+      "purpose": "Help manage the women’s shelter for good.",
+      "type_of_work": "Admin Assistant",
+      "NGO": 2,
+      "picture": "",
+      "category": "Internship",
+      "location": "Kathmandu, Nepal"
+    }
+  },    
+  {
+    "model": "mainapp.opportunitypost",
+    "pk": 6,
+    "fields": {
+      "title": "Plan festival for nonprofit organizations",
+      "description": "We need an event manager to plan and organize our various kinds of festivals within the organization.",
+      "no_of_hours": "20 to 25 hours",
+      "time_frame": "Seven month",
+      "starting_date": "2015-11-01",
+      "requirements": "Proficient at event management",
+      "purpose": "Better celebration at festivals",
+      "type_of_work": "Event Management",
+      "NGO": 3,
+      "picture": "",
+      "category": "Internship",
+      "location": "Kathmandu, Nepal"
+    }
+  },    
   {
     "model": "mainapp.volunteer",
     "pk": 1,
@@ -114,6 +168,7 @@
       "first_name": "Yogesh",
       "last_name": "Bhandari",
       "gender": "Male",
+      "email": "yogesh.bhandari@gmail.com",
       "address": "Kupondole, Lalitpur",
       "contact_number": "9840063224",
       "date_of_birth": "1992-03-14"
@@ -128,5 +183,37 @@
       "interest_reason": "I am really interested in technical help that I can provide to the organizations.",
       "resume": ""
     }
-  }  
+  },
+  {
+    "model": "mainapp.sponser",
+    "pk": 1,
+    "fields": {
+      "name": "Ncell",
+      "logo": ""
+    }
+  },
+  {
+    "model": "mainapp.sponser",
+    "pk": 2,
+    "fields": {
+      "name": "Gates Foundation",
+      "logo": ""
+    }
+  },
+  {
+    "model": "mainapp.sponser",
+    "pk": 3,
+    "fields": {
+      "name": "Internet.org",
+      "logo": ""
+    }
+  },
+  {
+    "model": "mainapp.sponser",
+    "pk": 4,
+    "fields": {
+      "name": "Help Nepal Network",
+      "logo": ""
+    }
+  }
 ]
