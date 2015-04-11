@@ -1,4 +1,14 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600);
+
+@font-face{
+	font-family: "Museo300-Regular";
+	src: url(../fonts/Museo300-Regular.otf) format("opentype");
+}
+@font-face{
+	font-family: "Museo100-Regular";
+	src: url(../fonts/Museo100-Regular.otf) format("opentype");
+}
+
 *{
 	margin: 0px;
 	padding: 0px;
@@ -14,9 +24,20 @@ body{
 	right: 0px;
 	top: 0px;
 	height: 100vh;
-	background: url(../images/side-home.jpg);
+	background: url(../images/side-home-1.jpg);
 	background-size: auto 100%;
 }
+body.org #side-wrapper{
+	width: 30%;
+	position: fixed;
+	right: 0px;
+	top: 0px;
+	height: 100vh;
+	background: url(../images/side-home-2.jpg);
+	background-size: auto 100%;
+}
+
+
 #side-wrapper p{
 	font-family: "Open Sans", sans-serif;
 	font-size: 22px;
