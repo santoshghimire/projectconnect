@@ -57,7 +57,112 @@
         {vars : "c", datas : "More than a month"},
         {vars : "d", datas : "More than a 3 month"}
     ]
+    var projectAll = [
+  {
+            title : "The title3",
+            location : "location",
+            picture : "images/project_img.jpg",
+            description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit minus facilis itaque, similique dolorum? Ipsa quaerat neque aliquid corporis modi alias, totam pariatur aut ab autem ut rem ducimus voluptatibus!",
+            projectType : "teaching",
+            ngoName : "ewwwwweeew sdfd",
+            category : "smth like",
+            timeSpanVar : "a",
+            url : "orgprofile.html?smth"
 
+      title: "Tutor trafficking survivors in English studies",
+      description: "A volunteer is needed to tutor trafficking survivors with their English studies for 2 hours/week. This opportunity is a 2 month commitment.",
+      no_of_hours: "16-20 hours",
+      time_frame: "More than a month",
+      starting_date: "2015-05-01",
+      requirements: "Fluent English speaker and Female",
+      purpose: "Build mentoring relationship to coach girls. Support education efforts to rehabilitate and empower at-risk youth. Build English skills.",
+      projectType: "Tutoring",
+      ngoName: 2,
+      picture: "image/1.png",
+      category: "Internship",
+      location: "Kathmandu, Nepal"
+  },
+  {
+    
+    
+      title: "Build event page for award-winning nonprofit’s 20th anniversary event",
+      description: "Design and create Shakti Samuha’s event page to help them raise awareness and funds for their 20th year birthday party! This opportunity is for 2 weeks.",
+      no_of_hours: "20-25 hours",
+      time_frame: "More than a month",
+      starting_date: "2015-12-01",
+      requirements: "Proficient at front-end design. Web development skills.",
+      purpose: "Build your portfolio with impactful design projects. Support an award-winning nonprofit with their biggest event. Help an awesome nonprofit to raise money!",
+      projectType: "Social Media",
+      ngoName: 1,
+      picture: "image/2.png",
+      category: "Volunteer",
+      location: "Kathmandu, Nepal"
+  },
+  {
+    
+    
+      title: "Volunteer to teach computer skills",
+      description: "A volunteer is required to teach some basic computer skills to the trafficked victims kids.",
+      no_of_hours: "30-35 hours",
+      time_frame: "More than three months",
+      starting_date: "2015-12-21",
+      requirements: "Proficient at basic computer skills, email and internet.",
+      purpose: "Teach the kids on how to use some basic computer tools like word, spreadsheet, presentation, email and social media.",
+      projectType: "Tutoring",
+      ngoName: 3,
+      picture: "image/3.png",
+      category: "Internship",
+      location: "Ravi Bhawan, Kathmandu, Nepal"
+  },  
+  {
+    
+    
+      title: "Lead social media strategy for award-winning nonprofit",
+      description: "We need a social media rockstar to help us workout the social media strategy and online presence.",
+      no_of_hours: "10-15 hours",
+      time_frame: "Less than a week",
+      starting_date: "2015-10-21",
+      requirements: "Proficient at social media use, strategic skills in making a unique social media presence.",
+      purpose: "Help our organization spread the good works that we are doing and connect us with doners and supportive masses.",
+      projectType: "Social Media",
+      ngoName: 1,
+      picture: "image/4.png",
+      category: "Internship",
+      location: "Kathmandu, Nepal"
+  },  
+  {
+    
+    
+      title: "Support women’s shelter as Admin Assistant",
+      description: "We need someone to help us manage and organize the women's shelter.",
+      no_of_hours: "60-65 hours",
+      time_frame: "More than three month",
+      starting_date: "2015-12-01",
+      requirements: "Proficient at communication and management skills.",
+      purpose: "Help manage the women’s shelter for good.",
+      projectType: "Admin Assistant",
+      ngoName: 2,
+      picture: "image/5.png",
+      category: "Internship",
+      location: "Kathmandu, Nepal"
+  },    
+  {
+    
+    
+      title: "Plan festival for nonprofit organizations",
+      description: "We need an event manager to plan and organize our various kinds of festivals within the organization.",
+      no_of_hours: "20 to 25 hours",
+      time_frame: "More than three months",
+      starting_date: "2015-11-01",
+      requirements: "Proficient at event management",
+      purpose: "Better celebration at festivals",
+      projectType: "Event Management",
+      ngoName: 3,
+      picture: "image/6.png",
+      category: "Internship",
+      location: "Kathmandu, Nepal"
+  }
+    ];
     var projectAll = [
         {
             title : "The title3",
