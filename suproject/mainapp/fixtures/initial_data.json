@@ -12,7 +12,7 @@
       "year_established": "1996",
       "email": "shaktisamuha.nepal@gmail.com",
       "website": "http://shaktisamuha.org.np",
-      "logo": "",
+      "logo": "media/organizations/logo/shakti.png",
       "picture_1": "",
       "picture_2": ""
     }
@@ -30,7 +30,7 @@
       "year_established": "2004",
       "email": "infor@rakshanepal.org",
       "website": "http://rakshanepal.org",
-      "logo": "",
+      "logo": "media/organizations/logo/rakshyanepal.png",
       "picture_1": "",
       "picture_2": ""
     }
@@ -48,7 +48,7 @@
       "year_established": "1987",
       "email": "cwin@mos.com.np",
       "website": "http://www.cwin.org.np",
-      "logo": "",
+      "logo": "media/organizations/logo/cwinnepal.png",
       "picture_1": "",
       "picture_2": ""
     }
@@ -189,15 +189,15 @@
     "pk": 1,
     "fields": {
       "name": "Ncell",
-      "logo": ""
+      "logo": "media/sponsers/logo/Ncell-Logo.jpg"
     }
   },
   {
     "model": "mainapp.sponser",
     "pk": 2,
     "fields": {
-      "name": "Gates Foundation",
-      "logo": ""
+      "name": "Bill & Melinda Gates Foundation",
+      "logo": "media/sponsers/logo/icon_small_bill_melinda_gates_foundation_logo.png"
     }
   },
   {
@@ -205,7 +205,7 @@
     "pk": 3,
     "fields": {
       "name": "Internet.org",
-      "logo": ""
+      "logo": "media/sponsers/logo/Internet.org_Logo.jpg"
     }
   },
   {
@@ -213,7 +213,7 @@
     "pk": 4,
     "fields": {
       "name": "Help Nepal Network",
-      "logo": ""
+      "logo": "media/sponsers/logo/help-nepal-network.jpg"
     }
   }
 ]

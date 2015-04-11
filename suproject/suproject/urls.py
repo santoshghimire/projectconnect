@@ -13,6 +13,7 @@ admin.autodiscover()
 
 router = routers.DefaultRouter()
 router.register(r'users', UserViewSet)
+# router.register(r'opportunities', OpportunityPostViewSet.as_view())
 router.register(r'opportunities', OpportunityPostViewSet)
 router.register(r'opportunitiy_types', OpportunityPostTypeViewSet)
 router.register(r'organizations', NonProfitOrganizationViewSet)
