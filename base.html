@@ -54,11 +54,14 @@
 
 				<select id="filter-2" placeholder="View Project by types">
 					<option disabled="disabled" selected="selected">View Project by Number of hours</option>
-					<option value="this">This</option>
-					<option value="this">That</option>
-					<option value="this">This</option>
-					<option value="this">Bleh</option>
 				</select>
+				<script id="projectTime-template" type="text/x-handlebars-template">
+					<option value="1" >View Project by Time span</option>
+					{{#each options}}
+						<option value="{{this.vars}}">{{this.datas}}</option>
+					{{/each}}
+					
+				</script>
 
 				<input type="submit"/>
 			</form>
@@ -70,24 +73,6 @@
 		<div class="container">
 			<h2>Recent Project Opportunities</h2>
 			<div id="projects">
-				<!-- <aside class="project">
-					<h3 class="project-title">Insert title here title hererere</h3>	
-					<h5 class="project-location">Insert Location here</h5>
-					<div class="project-img">
-						<img src="images/project_img.jpg"/>
-						<div class="overlay-description">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam scelerisque sem sed felis imperdiet, vulputate cursus purus facilisis.</p>
-							<span>Insert Project type here</span>
-						</div>
-					</div>
-					<span class="project-ngo">Insert NGO name here</span>
-					<span class="project-category">Category</span>
-				
-					<a href="#" class="view-more">Volunteer</a> 
-				</aside>-->		
-
-			
-			
 			<a href="#" class="view-more-main">View All Projects</a>
 			</div>
 			<script id="projects-template" type="text/x-handlebars-template">

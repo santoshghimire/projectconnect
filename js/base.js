@@ -35,6 +35,13 @@
         "fund raising",
     ];
 
+    var projectTime = [
+        {vars : "a", datas : "less than a day"},
+        {vars : "b", datas : "less than a week"},
+        {vars : "c", datas : "more than a month"},
+        {vars : "d", datas : "more than a 3 month"}
+    ]
+
     var projectAll = [
         {
             title : "The title1",
@@ -44,6 +51,7 @@
             projectType : "teaching",
             ngoName : "ewwwwweeew sdfd",
             category : "smth like",
+            timeSpanVar : "a"
         },
         {
             title : "The title2",
@@ -53,6 +61,7 @@
             projectType : "marketing",
             ngoName : "ewwwwweeew sdfd",
             category : "smth like",
+            timeSpanVar : "a"
         },
         {
             title : "The title3",
@@ -62,6 +71,7 @@
             projectType : "teaching",
             ngoName : "ewwwwweeew sdfd",
             category : "smth like",
+            timeSpanVar : "b"
         },{
             title : "The title4",
             location : "location",
@@ -70,6 +80,7 @@
             projectType : "fund raising",
             ngoName : "ewwwwweeew sdfd",
             category : "smth like",
+            timeSpanVar : "c"
         }
     ]
 
@@ -123,6 +134,18 @@
             $('#filter-1').html(html);
         })();
 
+    (function populateTimes () {
+            var source   = $("#projectTime-template").html();
+            var template = Handlebars.compile(source);
+            console.log(projectAll);
+            var context = {
+                options : projectTime
+            };
+            var html    = template(context);
+            console.log(html);
+            $('#filter-2').html(html);
+        })();
+
     /*get the projects according to type*/
     function getProjectsByType () {
         if (type===0) {
@@ -144,24 +167,30 @@
     /*get the projects according to time*/
     function getProjectsByTime () {
         var arrayProjects = null;
+        var arrayProjectsFromType = [];
+        if (type !==0) {
+            arrayProjectsFromType = arrayProjectsByType;
+        } else {
+            arrayProjectsFromType = projectAll;
+        }
         if (time===0 && type ===0) {
             arrayProjectsByTime = projectAll;
             arrayProjects = arrayProjectsByType;
         } else if (type !== 0 && time ===0) {
             arrayProjects = arrayProjectsByType;
         } else {
-            var projectTime = time;
+            var timeVar = time;
             arrayProjects = [];
-            for (var i = 0; i < projectAll.length; i++) {
-                if(projectAll[i].projectType === projectTime) {
-                    arrayProjects.push(projectAll[i]);
+            for (var i = 0; i < arrayProjectsFromType.length; i++) {
+                if(arrayProjectsFromType[i].timeSpanVar === timeVar) {
+                    arrayProjects.push(arrayProjectsFromType[i]);
                 }
             };
             arrayProjectsByType = arrayProjects;
         // populateProjects(arrayProjects);
         }
-        console.log(arrayProjects);
-        console.log("hskfdsfsd");
+        /*console.log(arrayProjects);
+        console.log("hskfdsfsd");*/
         populateProjects(arrayProjects);
     }
 
@@ -177,6 +206,20 @@
             getProjectsByType();
         } else {
             type = val;
+            getProjectsByType();    
+        }
+        
+    })
+
+    $('#filter-projects').on('change',"#filter-2",function () {
+        // alert("hello");
+        var val = $(this).val();
+        // var val = $('#filter-projects option:selected').val()
+        if (val === "1") {
+            time = 0;
+            getProjectsByType();
+        } else {
+            time = val;
             getProjectsByType();    
         }
         
