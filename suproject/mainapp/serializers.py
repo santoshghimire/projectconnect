@@ -37,6 +37,12 @@ class OpportunityPostTypeSerializer(serializers.HyperlinkedModelSerializer):
         fields = ('type_of_work',)
 
 
+class OpportunityPostTimeFrameSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = OpportunityPost
+        fields = ('time_frame',)
+
+
 class OpportunityPostLocationSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = OpportunityPost
