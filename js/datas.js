@@ -39,7 +39,7 @@
             ngoName : "ewwwwweeew sdfd",
             category : "smth like",
             timeSpanVar : "a",
-            url : "orgprofile.html?smth"
+            url : "orgprofile.html?orgName=raksha"
         },
         {
             title : "The title2",
@@ -50,7 +50,7 @@
             ngoName : "ewwwwweeew sdfd",
             category : "smth like",
             timeSpanVar : "a",
-            url : "?smth"
+            url : "?orgName=raksha"
         },
         {
             title : "The title3",
@@ -61,7 +61,7 @@
             ngoName : "ewwwwweeew sdfd",
             category : "smth like",
             timeSpanVar : "b",
-            url : "?smth"
+            url : "?orgName=raksha"
         },{
             title : "The title4",
             location : "location",
@@ -71,6 +71,33 @@
             ngoName : "ewwwwweeew sdfd",
             category : "smth like",
             timeSpanVar : "c",
-            url : "?smth"
+            url : "?orgName=raksha"
         }
     ]
+
+var orgInfo = {
+    raksha : {
+        title : "Raksha Nepal",
+        tag : "Care and Support for sexually exploited girls, women and their children",
+        orgImg : "images/rakhsha.png",
+        mission : "To help rescue and rehabilitate sexually exploited women and girls so that they can rebuild their lives for a better future.",
+        points3 : ["Assists sexually exploited girls, women and their children with building their lives by providing shelter, legal assistance, counseling, schooling, health education, and skills training.",
+            " Create awareness about self-protection from sexual exploitation.",
+            "Lobby for effective implementation of national/international laws involving child labor."
+            ],
+        about : ["Raksha Nepal (RN) is a non-government, non-profitable social organization that works for sexually exploited girls, women, and their children.  It also empowers and provides care and support to them.",
+            "RN is run by women and girls who have been sexually exploited.  Because of this, the organization is dedicated to those women and girls who have landed knowingly and unknowingly in the dance bars, massage parlors, and cabin restaurants, where they are sexually exploited by the owners as well as by the customers. RN is committed to making these women and girls aware of how to protect themselves in their current roles.  RN also empowers them to build their capacity to identify alternative livelihood opportunities to start safe and respectable lives.",
+            "RN believes that if women are confident and education the entire family and society benefits from it."
+            ],
+        orgGeneralInfo : {
+            estd : 2004,
+            gpoBox : 24866,
+            address : "Kathmandu, Nepal",
+            phone : "+977-1-4437552",
+            fax : "+977-1-4024100",
+            web : "www.rakshanepal.org",
+            email : "infor@rakshanepal.org"
+        }
+
+    }
+}
