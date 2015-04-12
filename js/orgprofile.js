@@ -34,7 +34,7 @@
         var html    = template(profile);
 
         console.log(html);
-        $('#projects').html(html);
+        $('.orgInfo').html(html);
     }
 
     Handlebars.registerHelper("inc", function(value, options)

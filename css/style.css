@@ -26,6 +26,8 @@ body{
 	height: 100vh;
 	background: url(../images/side-home-1.jpg);
 	background-size: auto 100%;
+	background-position-x: -100px;
+
 }
 body.org #side-wrapper{
 	width: 30%;
@@ -209,7 +211,7 @@ section#home-info p#home-info-tag{
 	display: inline-block;
 	margin-right: 2%;
 	margin-bottom: 20px;
-	min-height: 335px;
+	min-height: 360px;
 	border: 1px solid #aaa;
 	box-shadow: 0 0 2px #DEDDDD;
 	border-radius: 2px;
